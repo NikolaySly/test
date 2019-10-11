@@ -30,3 +30,29 @@ function trackScroll() {
 
 
   elem.classList.toggle("class")
+
+
+  /*
+  <style>
+  input {
+    transition: width 1s;
+    width: 100px;
+  }
+
+  .wide {
+    width: 300px;
+  }
+</style>
+
+<input type="button" id="elem" onclick="this.classList.toggle('wide')" value="Нажми меня">
+
+<script>
+  elem.ontransitionend = function() {
+    alert("DOM property"); // не сработает
+  };
+
+  elem.addEventListener("transitionend", function() {   //jобработчик на окончание анимации
+    alert("addEventListener"); // сработает по окончании анимации
+  });
+</script>
+  */
